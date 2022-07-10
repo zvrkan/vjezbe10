@@ -1,0 +1,15 @@
+<?php
+
+// main.php
+
+include("Proizvod.php");
+
+$proizvod = new Proizvod("Marker", 3.99);
+
+$proizvod->id = 100;
+
+echo "ID: " . $proizvod->id . "\n";
+echo "Naziv: " .  $proizvod->getNaziv() . "\n";
+echo "Cijena: " . $proizvod->getCijena() . "\n";
+
+?>
