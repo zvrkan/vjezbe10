@@ -1,0 +1,52 @@
+<?php
+
+// Proizvod.php
+
+class Proizvod
+{
+    public $id;
+    protected $naziv;
+    protected $cijena;
+    private $volumen;
+
+    public function __construct($n, $c)
+    {
+        $this->setNaziv($n);
+        $this->setCijena($c);
+    }
+
+    public function getNaziv()
+    {
+        return $this->naziv;
+    }
+
+    protected function setNaziv($param)
+    {
+        $this->naziv = $param;
+        return true;
+    }
+
+    public function getCijena()
+    {
+        return $this->cijena;
+    }
+    
+    protected function setCijena($param)
+    {
+        $this->cijena = $param;
+        return true;
+    }
+
+    private function getVolumen()
+    {
+        return $this->volumen;
+    }
+
+    private function setVolumen($param)
+    {
+        $this->volumen = $param;
+        return true;
+    }
+}
+
+?>
